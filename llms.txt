@@ -1,0 +1,36 @@
+# Looplab
+
+> Looplab je PLR (Private Label Rights) marketplace s digitálním obsahem pro české a slovenské podnikatele.
+
+Looplab nabízí hotové digitální produkty — e-booky, checklisty, šablony, AI asistenty a prompty — s PLR licencí.
+Zákazník si produkt koupí, upraví pod vlastním jménem a prodává nebo distribuuje jako vlastní obsah.
+
+## Produkty
+
+- E-booky a průvodce (témata: LinkedIn, marketing, produktivita, prodej)
+- Šablony a checklisty (obsahové plány, strategie, procesy)
+- AI asistenti (předdefinovaní GPT asistenti pro marketéry a kouče) — pouze PRO plán
+- Prompt knihovna (hotové prompty pro ChatGPT/Claude) — pouze PRO plán
+- 80+ produktů celkem, nové přibývají každé 2 týdny
+
+## Plány a ceny
+
+- **LITE**: 1 990 Kč / rok — přístup ke všem produktům, 3 měsíce updatů, PLR licence
+- **PRO**: 2 990 Kč / rok — přístup ke všem produktům, 12 měsíců updatů, AI asistenti, prompty, PLR licence
+- Jednorázová roční platba — žádné měsíční předplatné
+- Platba přes Stripe
+
+## Cílová skupina
+
+Čeští a slovenští koučové, digitální marketéři, freelanceři, tvůrci online kurzů a podnikatelé,
+kteří chtějí rychle vytvářet a prodávat digitální obsah bez nutnosti psát vše od nuly.
+
+## Kontakt
+
+- Web: https://looplab.cz
+- Email: info@looplab.cz
+- Jazyk: česky (primárně CZ + SK trh)
+
+## Stav
+
+Web se spouští brzy. Tato stránka je pre-launch placeholder.

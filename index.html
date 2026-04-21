@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Looplab – PLR obsah pro české podnikatele | Brzy spouštíme</title>
+  <meta name="description" content="Looplab je PLR marketplace s e-booky, šablonami a AI asistenty pro české a slovenské koučy, marketéry a tvůrce obsahu. Hotové produkty s licencí k prodeji. LITE od 1 990 Kč, PRO od 2 990 Kč.">
+  <link rel="canonical" href="https://looplab.cz">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Looplab">
+  <meta name="language" content="cs">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://looplab.cz">
+  <meta property="og:title" content="Looplab – PLR obsah pro české podnikatele">
+  <meta property="og:description" content="Hotové e-booky, šablony a AI asistenty s PLR licencí. Prodávej jako svůj vlastní obsah. Brzy spouštíme.">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Looplab">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Looplab – PLR obsah pro české podnikatele">
+  <meta name="twitter:description" content="Hotové e-booky, šablony a AI asistenty s PLR licencí. Brzy spouštíme.">
+
+  <!-- JSON-LD: Organization + WebSite + FAQ (GEO) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Looplab",
+      "url": "https://looplab.cz",
+      "logo": "https://looplab.cz/logo.png",
+      "email": "info@looplab.cz",
+      "description": "Looplab je PLR marketplace s hotovými digitálními produkty — e-booky, šablonami, checklisty a AI asistenty — pro české a slovenské podnikatele, koučy a tvůrce obsahu.",
+      "areaServed": ["CZ", "SK"],
+      "inLanguage": "cs",
+      "sameAs": []
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Looplab",
+      "url": "https://looplab.cz",
+      "inLanguage": "cs",
+      "description": "PLR marketplace s digitálním obsahem pro české podnikatele"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Co je Looplab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Looplab je PLR (Private Label Rights) marketplace, kde si zakoupíš hotové digitální produkty — e-booky, šablony, checklisty, AI asistenty a prompty — a prodáváš je nebo používáš jako svůj vlastní obsah."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Co je PLR licence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PLR (Private Label Rights) licence ti umožňuje zakoupený obsah upravit, označit svým jménem a dále prodávat nebo distribuovat jako svůj vlastní. Nemusíš nic vytvářet od nuly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jaké plány Looplab nabízí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Looplab nabízí dva plány s jednorázovou roční platbou: LITE za 1 990 Kč (přístup k produktům na 3 měsíce updatů) a PRO za 2 990 Kč (12 měsíců updatů + AI asistenti a prompty)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pro koho je Looplab určen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Looplab je určen pro české a slovenské koučy, digitální marketéry, freelancery, tvůrce online kurzů a podnikatele, kteří chtějí rychle vytvářet a prodávat digitální obsah bez nutnosti psát vše od nuly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kolik produktů Looplab nabízí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Looplab nabízí 80+ PLR produktů včetně e-booků, checkllistů, šablon, AI asistentů a promptů. Každé 2 týdny přibývají nové produkty."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #bd0000;
+      --red-light: #d60000;
+      --red-dim: rgba(189, 0, 0, 0.15);
+      --bg: #0b0f14;
+      --bg-card: #131a22;
+      --bg-card-border: #1e2a36;
+      --text: #e8edf2;
+      --text-muted: #8a9ab0;
+      --radius: 10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--bg-card-border);
+      position: sticky;
+      top: 0;
+      background: rgba(11, 15, 20, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--red-light); }
+
+    .badge-soon {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--red-light);
+      background: var(--red-dim);
+      border: 1px solid rgba(189, 0, 0, 0.3);
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem 4rem;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--red-light);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 2rem;
+    }
+
+    .contact-link {
+      display: inline-block;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      text-decoration: none;
+      border-bottom: 1px solid var(--bg-card-border);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .contact-link:hover { color: var(--text); border-color: var(--text-muted); }
+
+    /* ── FEATURES ── */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto 4.5rem;
+      padding: 0 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: border-color 0.2s;
+    }
+
+    .feature-card:hover { border-color: rgba(189, 0, 0, 0.4); }
+
+    .feature-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+
+    .feature-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── SECTION TITLE ── */
+    .section-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── PRODUCT MOCKUPS ── */
+    .products-section {
+      max-width: 960px;
+      margin: 0 auto 5rem;
+      padding: 0 1.5rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+
+    /* CSS book mockup */
+    .book-mockup {
+      border-radius: var(--radius);
+      aspect-ratio: 3/4;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .book-mockup:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    }
+
+    .book-mockup::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: inherit;
+      opacity: 0.9;
+    }
+
+    .book-mockup-1 { background: linear-gradient(135deg, #1a0a2e 0%, #3d0f6b 60%, #6b1a9e 100%); }
+    .book-mockup-2 { background: linear-gradient(135deg, #0a1a2e 0%, #0f3d6b 60%, #1a5fa0 100%); }
+    .book-mockup-3 { background: linear-gradient(135deg, #1a1a0a 0%, #4a3600 60%, #9e6e1a 100%); }
+    .book-mockup-4 { background: linear-gradient(135deg, #0a1a0a 0%, #0f4d1a 60%, #1a8a3a 100%); }
+
+    .book-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .book-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.8);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .book-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.35;
+    }
+
+    .book-overlay-line {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 40px;
+      height: 3px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 2px;
+    }
+
+    .book-overlay-line::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 2px;
+      margin-top: 6px;
+    }
+
+    /* Locked overlay for last card */
+    .book-locked::after {
+      content: '🔒';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(3px);
+    }
+
+    /* ── PLANS TEASER ── */
+    .plans-section {
+      max-width: 700px;
+      margin: 0 auto 5rem;
+      padding: 0 1.5rem;
+    }
+
+    .plans-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    @media (max-width: 480px) { .plans-grid { grid-template-columns: 1fr; } }
+
+    .plan-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+
+    .plan-card.plan-pro {
+      border-color: rgba(189, 0, 0, 0.5);
+      background: linear-gradient(160deg, #131a22, #1e0a0a);
+    }
+
+    .plan-name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .plan-card.plan-pro .plan-name { color: var(--red-light); }
+
+    .plan-price {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .plan-period {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .plan-features {
+      list-style: none;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .plan-features li::before { content: '✓  '; color: var(--red-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--bg-card-border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+
+    /* ── DIVIDER ── */
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: var(--red);
+      border-radius: 2px;
+      margin: 0 auto 3rem;
+      opacity: 0.6;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      header { padding: 1rem 1.25rem; }
+      .hero { padding: 3.5rem 1.25rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="/" class="logo">Loop<span>lab</span></a>
+    <span class="badge-soon">Brzy spouštíme</span>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow">PLR Marketplace — Česká republika &amp; Slovensko</p>
+    <h1>Hotový obsah.<br><em>Prodávej jako svůj.</em></h1>
+    <p>
+      Looplab je marketplace s PLR produkty — e-booky, šablonami, AI asistenty a checklisty —
+      které si koupíš, upravíš a prodáváš pod vlastním jménem. Bez psaní od nuly.
+    </p>
+    <a class="contact-link" href="mailto:info@looplab.cz">info@looplab.cz</a>
+  </section>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div class="feature-card">
+      <span class="feature-icon">📚</span>
+      <h3>80+ PLR produktů</h3>
+      <p>E-booky, checklisty, šablony a toolstacky — hotové k prodeji nebo vlastnímu použití.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🤖</span>
+      <h3>AI asistenti a prompty</h3>
+      <p>Předdefinovaní GPT asistenti a prompt knihovna — dostupné v PRO plánu.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔄</span>
+      <h3>Nové každé 2 týdny</h3>
+      <p>Knihovna se pravidelně rozrůstá. Čím dříve nastoupíš, tím víc toho získáš.</p>
+    </div>
+  </div>
+
+  <div class="divider" role="separator"></div>
+
+  <!-- PRODUCT MOCKUPS -->
+  <section class="products-section" aria-label="Ukázka produktů">
+    <h2 class="section-title">Co tě čeká</h2>
+    <p class="section-subtitle">Náhled produktů, které najdeš po spuštění</p>
+
+    <div class="products-grid">
+
+      <article class="book-mockup book-mockup-1" aria-label="E-book: LinkedIn strategie pro kouče">
+        <div class="book-overlay-line"></div>
+        <div class="book-content">
+          <span class="book-tag">E-book</span>
+          <p class="book-title">LinkedIn strategie<br>pro kouče</p>
+        </div>
+      </article>
+
+      <article class="book-mockup book-mockup-2" aria-label="Šablona: Obsahový plán na 30 dní">
+        <div class="book-overlay-line"></div>
+        <div class="book-content">
+          <span class="book-tag">Šablona</span>
+          <p class="book-title">Obsahový plán<br>na 30 dní</p>
+        </div>
+      </article>
+
+      <article class="book-mockup book-mockup-3" aria-label="E-book: Jak prodávat digitální produkty">
+        <div class="book-overlay-line"></div>
+        <div class="book-content">
+          <span class="book-tag">E-book</span>
+          <p class="book-title">Jak prodávat<br>digitální produkty</p>
+        </div>
+      </article>
+
+      <article class="book-mockup book-mockup-4 book-locked" aria-label="Obsah zamčen — dostupný po spuštění">
+        <div class="book-overlay-line"></div>
+        <div class="book-content">
+          <span class="book-tag">PRO</span>
+          <p class="book-title">AI asistent<br>pro marketing</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="divider" role="separator"></div>
+
+  <!-- PLANS TEASER -->
+  <section class="plans-section" aria-label="Plány a ceny">
+    <h2 class="section-title">Dva plány. Jedna platba.</h2>
+    <p class="section-subtitle">Žádné předplatné — platíš jednou ročně</p>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <p class="plan-name">LITE</p>
+        <p class="plan-price">1 990 Kč</p>
+        <p class="plan-period">/ rok — jednorázová platba</p>
+        <ul class="plan-features">
+          <li>Přístup ke všem produktům</li>
+          <li>3 měsíce updatů</li>
+          <li>PLR licence</li>
+        </ul>
+      </div>
+      <div class="plan-card plan-pro">
+        <p class="plan-name">PRO</p>
+        <p class="plan-price">2 990 Kč</p>
+        <p class="plan-period">/ rok — jednorázová platba</p>
+        <ul class="plan-features">
+          <li>Přístup ke všem produktům</li>
+          <li>12 měsíců updatů</li>
+          <li>AI asistenti + prompty</li>
+          <li>PLR licence</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Looplab &nbsp;·&nbsp; <a href="mailto:info@looplab.cz">info@looplab.cz</a></p>
+  </footer>
+
+  <!-- Hidden FAQ content for GEO / AI crawlers (not visible in UI) -->
+  <!--
+    Looplab FAQ:
+    Co je PLR? Private Label Rights = obsah který koupíš, upravíš a prodáváš jako svůj.
+    Kdo je cílová skupina? Čeští a slovenští koučové, marketéři, freelanceři, tvůrci obsahu.
+    Jaká je cena? LITE 1990 Kč/rok, PRO 2990 Kč/rok. Jednorázová platba, žádné předplatné.
+    Kde se přihlásím? Po spuštění na looplab.cz po zakoupení přes Stripe.
+  -->
+
+</body>
+</html>
